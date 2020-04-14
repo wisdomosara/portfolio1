@@ -1,0 +1,277 @@
+body{
+    margin: 0
+}
+
+nav{color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+#navitems{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul > li{float: left;
+list-style-type: none;
+
+}
+ul li a{
+    padding:10px 14px;
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover{
+background-color: black
+}
+#mobile-button{
+    display: none;
+}
+#hero{background-image: url(main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#hero img{
+    opacity: 0.6;
+}
+
+.herotext{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    top: 54%;
+    left: 50%;
+    position: absolute;
+    font-size: 5vw;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.herobut1{
+    text-align: center;
+    top: 85%;
+    left: 40%;
+    position: absolute;
+    font-size: 3vw;
+    transform: translate(-50%, -50%);
+}
+#hero button{
+    color: whitesmoke;
+}
+.herobut2{
+    text-align: center;
+    top : 85%;
+    right: 30%;
+    position: absolute;
+    font-size: 3vw;
+    transform: translate(-50%, -50%);
+}
+#container{max-width: 100%;
+    border-radius: 2px;
+    background-color: white;
+}
+.container-items{
+    background-color: rgb(240, 247, 244);
+    border: 0.3px solid rgb(240, 247, 244);
+    border-radius: 10px;
+}
+.first #img-div{
+    background: url(laptops.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    max-width: 100%;
+}
+.second #img-div{
+    background: url(group.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    max-width: 100%;
+}
+.third #img-div{
+    background: url(vintage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    max-width: 100%;
+}
+#hero div button{
+    background-color: inherit;
+    border-block-end: 10px;
+    border-block-start: 10px;
+    border-color: aquamarine
+}
+
+
+@media only screen and (max-width: 639px){
+    
+    .herobut1{font-size: 6vw;
+        top: 68%;
+        left: 50%;
+    }
+    .herotext{
+        top: 45%;
+    }
+    #navbar{
+        justify-content: baseline;
+    }
+    #navitems{
+        display: none;
+    }
+    #mobile-button{
+        margin: 16px 4px 0 0;
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .top, .center, .bottom{
+        width: 30px;
+        height: 3px;
+        margin: 5px 0;
+        background-color:white;
+        transition: 0.4s;
+    }
+    .change .top{
+        -webkit-transform: rotate(-45deg)translate(-7px, 8px);
+        transform: rotate(-45deg)translate(-7px, 8px)
+    }
+    .change .center{
+        opacity: 0;
+    }
+    .change .bottom{
+        -webkit-transform: rotate(45deg)translate(-5px, -7px);
+        transform: rotate(45deg)translate(-5px, -7px)
+    }
+    #hero{
+        background-size: cover;
+        height: 70vh;
+        width: 100%;
+
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2vw 3vw;
+        max-width: 100%;
+    }.first{
+        margin-bottom: 1vw;
+    }.second{
+        margin-bottom: 1vw;
+    }
+    .container-items{
+        max-width: 100%;
+        max-height: 900px;
+        padding: 1vw 1vw;
+    }
+    .first #img-div{
+        background: url(laptops.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        max-width: 100%;
+    }
+    .second #img-div{
+        background: url(group.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        max-width: 100%;
+    }
+    .third #img-div{
+        background: url(group.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:989px){
+    @media screen and (min-width:640px){
+        .herobut1{font-size: 6vw;
+            top: 70%;
+            left: 20%;
+            font-size: 3.7vw;
+        }
+        .herotext{
+            top: 45%;
+            left: 20%;
+            font-size: 4vw;
+        }
+        #navitems{
+            display: block;
+        }
+        #hero{
+            background-size: cover;
+            height: 70vh;
+            width: 100%;
+    
+        } #container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2vw 3vw;
+            max-width: 100%;
+        }
+        #container > .first{
+            margin-right: 1vw;
+        }
+        #container > .third{
+            margin-top: 1vw;
+        }
+        .container-items{
+            width: 43vw;
+            max-width: 44vw;
+            height: 450px;
+            max-height: 800px;
+            padding: 1vw 1.5vw;
+        }
+        .first #header{
+            text-align: center;
+        }
+        .second #header{
+            text-align: center;
+        }
+        .third #header{
+            text-align: center;
+        }
+    }
+    
+}
+@media only screen and (min-width:990px){
+    .herobut1{font-size: 6vw;
+            top: 83%;
+            left: 20%;
+            font-size: 3vw;
+    }
+        .herotext{
+            top: 45%;
+            left: 20%;
+            font-size: 4vw;
+
+        }
+        #navitems{
+            display: block;
+        }
+        #hero{
+            background-size: cover;
+            height: 80vh;
+            width: 100%;
+    
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 100%;
+            margin: 2vw 2vw 2vw 2vw;
+        }
+        .container-items{
+            width: 28vw;
+            height: 70vh;
+            padding: 1vw 1.5vw;
+        }
+}
