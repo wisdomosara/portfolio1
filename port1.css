@@ -113,6 +113,13 @@ footer{
 #social{
     margin-top: 13px;
 }
+#social i{
+    font-size: 100px;
+    color: rgb(209, 211, 211);
+}
+a{
+    text-decoration: none;
+}
 #about{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -159,7 +166,7 @@ footer{
     }
     #hero{
         background-size: cover;
-        height: 70vh;
+        height: 60vh;
         width: 100%;
 
     }
@@ -176,21 +183,28 @@ footer{
     }
     .container-items{
         max-width: 100%;
-        max-height: 900px;
+        max-height: 750px;
         padding: 1vw 1vw;
     }
     .first #img-div{
-        height: 50vh;
+        height: 45vh;
         max-width: 100%;
     }
     .second #img-div{
-        height: 50vh;
+        height: 45vh;
         max-width: 100%;
     }
     .third #img-div{
-        height: 50vh;
+        height: 45vh;
         max-width: 100%;
     }
+    #social{
+        margin-top: 60px;
+    }
+    #social i{
+        font-size: 60px;
+    }
+    
 }
 
 @media only screen and (max-width:989px){
