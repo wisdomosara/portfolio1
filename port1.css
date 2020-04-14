@@ -180,9 +180,9 @@ background-color: black
         max-width: 100%;
     }
     .third #img-div{
-        background: url(group.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+       
+    
+
         height: 50vh;
         max-width: 100%;
     }
