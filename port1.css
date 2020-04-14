@@ -153,12 +153,12 @@ background-color: black
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 2vw 3vw;
+        margin: 3vw 3vw;
         max-width: 100%;
     }.first{
-        margin-bottom: 1vw;
+        margin-bottom: 2vw;
     }.second{
-        margin-bottom: 1vw;
+        margin-bottom: 2vw;
     }
     .container-items{
         max-width: 100%;
